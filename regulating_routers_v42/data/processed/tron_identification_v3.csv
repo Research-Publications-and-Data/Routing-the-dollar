@@ -1,0 +1,31 @@
+address,value_usd,first_funder,entity,confidence,source,evidence,behavioral_cluster,nansen_tagged_cps,tronscan_tagged_cps,dark_control_layer
+TNiq9AXBp9EjUqhDhrwrfvAA8U3GUQZH81,212826951,TCXLcoupSVwYrJK1x51vngpoELKUBRnhbu,Likely Binance related,MEDIUM,Tronscan v2 transfer tags,TRC20 transfers: 45% to Binance,MULTI_EXCHANGE,56,7,No
+TTiDLWE6fZK8okMJv6ijg42yrH6W2pjSr9,131229799,TYkdG6k1987mkfU5ZzYf9ZK3xi989jNMPJ,,NONE,,,MULTI_EXCHANGE,29,4,Yes
+THHiKCHNQKxrZiRy4rrqy5jitSP3nUvhJY,124534476,TX42iZ53BEWV6pFH7u4CpC6tPN3Y2ZbbJ6,Binance operational,HIGH,Tronscan v2 transfer tags,TRC20 transfers: 100% to Binance,P2P_PURE,57,2,No
+TFvuXyB7AhCV7jZcC9uukZDqrqCvsZQMJh,112826742,TMx8k9PvF6QDWrHuVgfRbbkoHAdibfQgLv,Binance operational,HIGH,Tronscan v2 transfer tags,TRC20 transfers: 100% to Binance,P2P_PURE,29,1,No
+TXGHxdYbGy574z5hBu4LNzq9NzjZQ9bhUf,108521916,TTCCA4AwGYATLJjULx86Hen3JiPMSLGer6,,NONE,,,CONCENTRATED,14,0,Yes
+TRSKhXD5qSekLUxfwYxR1zA5kwTLhke2Rx,104603024,TQ4EiPiAuEfYDWx5P47h12k62zzDSNgtdv,,NONE,,,P2P_PURE,20,0,Yes
+TG2CMGxnTPgQ6V58kiKd7wbyN8ewtAmY76,100521646,TTd9qHyjqiUkfTxe3gotbuTMpjU8LEbpkN,Kraken operational,HIGH,Nansen funder label,Funded by Kraken hot wallet,UNKNOWN,0,0,No
+TYAavN2xCDro5Gdip8UU6W9oQmM43rNxzQ,99556704,TBA6CypYJizwA9XdC7Ubgc5F1bxrQ7SqPt,Gate.io operational,HIGH,Nansen funder label,Funded by Gate.io hot wallet,UNKNOWN,0,0,No
+TU72cTvdkWvoB7xgN5TXFtoXtUuWRuvUTm,85551802,TC8WxPjG7VDdeCK2FriRZwiPTFBayS9PHy,BingX operational,HIGH,Nansen funder label,Funded by BingX hot wallet,UNKNOWN,0,0,No
+TSUYvQ5tdd3DijCD1uGunGLpftHuSZ12sQ,84860525,TTgFYLvES6FtooX4cnNu1BB4uGeiNKANYE,Sun operational,HIGH,Tronscan v2 transfer tags,TRC20 transfers: 100% to Sun,P2P_PURE,100,2,No
+TXNYeYdao7JL7wBtmzbk7mAie7UZsdgVjx,83733434,TYdt7MHoR1CenyYUdeCZ477oTfLHoLqWkC,Binance operational,HIGH,Tronscan v2 transfer tags,TRC20 transfers: 72% to Binance,P2P_PURE,87,3,No
+TUrwLivTiwhSNwyhmY54aE8U6fnBnJTeeg,71977635,TAWSNgquwfFXWNKQ2SFrz3H1nwy1JERru9,,NONE,,,P2P_PURE,21,0,Yes
+TVPQLkVXvN7MduHWhD4Q7rGVyRdDu5R8F6,68722698,TSCC14Y9nxdL4kLfbqwaUw2rX32n1sUpzB,BingX operational,HIGH,Nansen funder label,Funded by BingX hot wallet,UNKNOWN,0,0,No
+TSBuVDEiYtaHM6er5M72bYQod8S4YpPmAD,68629885,TB77yMb7b3irswyP9P1p93ne9cR3wtkkSR,,NONE,,,P2P_PURE,76,0,Yes
+TR386F5mNUArRDPpTque5j152M5Tc4UKGv,68341185,TDKZstc2KE58d6kFQ4f7eCdk1xHhapJKBs,Coins.ph operational,HIGH,Tronscan v2 transfer tags,18-28 txns with coins.ph ($64-78M),P2P_PURE,17,1,No
+TYE5mNXSQHuPAdCa1etk76BKybD4FKJto6,66998386,TWs8Bw27gqtaT5Gcp9hugEw9x3ZM9BHV1B,OKX: Hot Wallet [TLaGjwhv] operational,HIGH,Nansen counterparty,Top CP: 🏦 OKX: Hot Wallet [TLaGjwhv],EXCHANGE_DOMINANT,100,0,No
+TT5wKUeYLeGYDxUnGJuzQQfLdTY3W7v9Q3,64547728,TDKZstc2KE58d6kFQ4f7eCdk1xHhapJKBs,Coins.ph operational,HIGH,Tronscan v2 transfer tags,18-28 txns with coins.ph ($64-78M),CONCENTRATED,9,1,No
+TR9ahL7bk9jUKzgsEPdAhssYkKPW6T45N8,58587002,TQV6pEPGuyVxjUF6AJRtTELuaXaa9qLnoy,,NONE,,,P2P_PURE,100,0,Yes
+TTYR4Wt17FHd7NPow4KqohNbtp41cNvWL8,55428718,TYDxmfhXGGwHUaBqSckPQsjNi9MZjTWsn6,,NONE,,,P2P_PURE,17,0,Yes
+TTr4STG8SMVrPafYZEvFjZoerPGFTD8vUR,55025311,TLQK6ms52x62CQqeXQXqDVGz5sZzyLPKLu,Kraken operational,HIGH,Tronscan v2 transfer tags,TRC20 transfers: 100% to Kraken,MULTI_EXCHANGE,20,1,No
+TGTsSX3L2BF7jcYW1695k63uTmU7YBVGQu,49987792,TFjoyxjuWCYu8QDKbJtEdUEL1CqYzWX6fB,,NONE,,,CONCENTRATED,5,0,Yes
+TCtVtrdy8sSXGMx1QYUjMrAvau1pduC2Aa,49977534,TBEZnsq9dA2xXkjieJ4ppF3cidXPdSrqwE,Bybit: Hot Wallet TU4vE [TU4vEruv] operational,HIGH,Nansen counterparty,Top CP: 🏦 Bybit: Hot Wallet TU4vE [TU4vEruv],EXCHANGE_DOMINANT,5,0,No
+TKFuckiRGCTerroristsNoBiTEXy2r7mNX,49417092,TNxMBdZE7yCPhc88bHeS94deFJkqJDUpRz,,NONE,,,P2P_PURE,100,0,Yes
+THDW2bQZicUiuJxkWHhtmva9b37JFWnMf4,48658528,TYASr5UV6HEcXatwdFQfmLVUqQQQMUxHLS,Binance operational,HIGH,Nansen funder label,Funded by Binance hot wallet,UNKNOWN,0,0,No
+TF7tupaDszUBmxdyKRAkQWBYGLkYRdQJGv,48600053,TJk8P3rEgR9o6TLqsGmnAavdcLf5obc5ig,,NONE,,,P2P_PURE,100,0,Yes
+TRqtSahVi28Rfd1uEW5ap6NzFoGWDwDUyu,46129304,TFvy5DWWYQ61UzLgFXju5NyYyMxHeJa5Wh,Bybit operational,HIGH,Tronscan v2 transfer tags,TRC20 transfers: 100% to Bybit,UNKNOWN,0,1,No
+TYQc5j8AA3dBh17oDGv1fH2pGswofV3ArP,45899406,TQ1u4bKn4ao21ykT1GpCNvMNuw5M1c2x41,,NONE,,,UNKNOWN,0,0,Yes
+TZ8Ksz21Hk1tQuztCKCUJBRXStCav9uyjM,45847406,TZD9u9UH1gug5TfcbsgCPeqyRPZ7BaMJqc,,NONE,,,UNKNOWN,0,0,Yes
+TQWWJFsxPSiSwHKHq9kCbtZtjQqybCW7b2,45722246,TM3D4kdAdVhVzRwGEqcSa9jDnYpiteKKHm,,NONE,,,UNKNOWN,0,0,Yes
+TWrmh883bEyEvcfiWDsyYBhDVbsQDn4cDK,45283439,TCRZeipZpb7eFMXTAoCVLKnh9uqE6gVxBC,,NONE,,,UNKNOWN,0,1,Yes

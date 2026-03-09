@@ -1,0 +1,243 @@
+{
+  "n_boot_attempted": 500,
+  "n_boot_successful": 500,
+  "k_ar_diff": 7,
+  "coint_rank": 1,
+  "periods": 26,
+  "significance": {
+    "Fed Assets -> Fed Assets": {
+      "week_4": {
+        "point": 0.55963,
+        "ci90_lo": 0.294731,
+        "ci90_hi": 0.550119,
+        "significant": "True"
+      },
+      "week_8": {
+        "point": 0.379853,
+        "ci90_lo": 0.313971,
+        "ci90_hi": 0.479544,
+        "significant": "True"
+      },
+      "week_12": {
+        "point": 0.274968,
+        "ci90_lo": 0.164723,
+        "ci90_hi": 0.347434,
+        "significant": "True"
+      },
+      "week_26": {
+        "point": 0.487312,
+        "ci90_lo": 0.240457,
+        "ci90_hi": 0.439202,
+        "significant": "True"
+      }
+    },
+    "ON RRP -> Fed Assets": {
+      "week_4": {
+        "point": -0.000211,
+        "ci90_lo": -0.000484,
+        "ci90_hi": 0.000423,
+        "significant": "False"
+      },
+      "week_8": {
+        "point": -5.3e-05,
+        "ci90_lo": -0.000592,
+        "ci90_hi": 0.000118,
+        "significant": "False"
+      },
+      "week_12": {
+        "point": -0.000647,
+        "ci90_lo": -0.000569,
+        "ci90_hi": 5e-05,
+        "significant": "False"
+      },
+      "week_26": {
+        "point": -0.00143,
+        "ci90_lo": -0.001207,
+        "ci90_hi": -0.000288,
+        "significant": "True"
+      }
+    },
+    "Stablecoin Supply -> Fed Assets": {
+      "week_4": {
+        "point": 0.013219,
+        "ci90_lo": -0.003331,
+        "ci90_hi": 0.03146,
+        "significant": "False"
+      },
+      "week_8": {
+        "point": 0.026122,
+        "ci90_lo": 0.005437,
+        "ci90_hi": 0.029099,
+        "significant": "True"
+      },
+      "week_12": {
+        "point": 0.019884,
+        "ci90_lo": 0.006876,
+        "ci90_hi": 0.030172,
+        "significant": "True"
+      },
+      "week_26": {
+        "point": 0.004804,
+        "ci90_lo": -0.001098,
+        "ci90_hi": 0.023939,
+        "significant": "False"
+      }
+    },
+    "Fed Assets -> ON RRP": {
+      "week_4": {
+        "point": 16.891033,
+        "ci90_lo": -54.171956,
+        "ci90_hi": 39.61785,
+        "significant": "False"
+      },
+      "week_8": {
+        "point": 26.112145,
+        "ci90_lo": -30.5148,
+        "ci90_hi": 26.897133,
+        "significant": "False"
+      },
+      "week_12": {
+        "point": -6.571816,
+        "ci90_lo": -25.277058,
+        "ci90_hi": 35.745281,
+        "significant": "False"
+      },
+      "week_26": {
+        "point": -8.039239,
+        "ci90_lo": -23.885836,
+        "ci90_hi": 29.326202,
+        "significant": "False"
+      }
+    },
+    "ON RRP -> ON RRP": {
+      "week_4": {
+        "point": 0.173439,
+        "ci90_lo": 0.156115,
+        "ci90_hi": 0.423767,
+        "significant": "True"
+      },
+      "week_8": {
+        "point": 0.459921,
+        "ci90_lo": 0.267404,
+        "ci90_hi": 0.441734,
+        "significant": "True"
+      },
+      "week_12": {
+        "point": 0.717488,
+        "ci90_lo": 0.244479,
+        "ci90_hi": 0.426856,
+        "significant": "True"
+      },
+      "week_26": {
+        "point": 0.573915,
+        "ci90_lo": 0.254661,
+        "ci90_hi": 0.409148,
+        "significant": "True"
+      }
+    },
+    "Stablecoin Supply -> ON RRP": {
+      "week_4": {
+        "point": -7.473083,
+        "ci90_lo": -8.977877,
+        "ci90_hi": 1.006249,
+        "significant": "False"
+      },
+      "week_8": {
+        "point": -14.498777,
+        "ci90_lo": -7.574519,
+        "ci90_hi": -1.084821,
+        "significant": "True"
+      },
+      "week_12": {
+        "point": -7.373355,
+        "ci90_lo": -7.999382,
+        "ci90_hi": -1.614506,
+        "significant": "True"
+      },
+      "week_26": {
+        "point": -9.433104,
+        "ci90_lo": -8.224895,
+        "ci90_hi": -1.838672,
+        "significant": "True"
+      }
+    },
+    "Fed Assets -> Stablecoin Supply": {
+      "week_4": {
+        "point": 0.959435,
+        "ci90_lo": -2.856208,
+        "ci90_hi": 1.763375,
+        "significant": "False"
+      },
+      "week_8": {
+        "point": 2.192237,
+        "ci90_lo": -3.024382,
+        "ci90_hi": 1.99464,
+        "significant": "False"
+      },
+      "week_12": {
+        "point": 2.735871,
+        "ci90_lo": -3.343241,
+        "ci90_hi": 2.405445,
+        "significant": "False"
+      },
+      "week_26": {
+        "point": 3.699546,
+        "ci90_lo": -3.527732,
+        "ci90_hi": 2.657363,
+        "significant": "False"
+      }
+    },
+    "ON RRP -> Stablecoin Supply": {
+      "week_4": {
+        "point": -0.004782,
+        "ci90_lo": -0.00612,
+        "ci90_hi": 0.004941,
+        "significant": "False"
+      },
+      "week_8": {
+        "point": -0.008983,
+        "ci90_lo": -0.007874,
+        "ci90_hi": 0.006204,
+        "significant": "False"
+      },
+      "week_12": {
+        "point": -0.008908,
+        "ci90_lo": -0.008241,
+        "ci90_hi": 0.007354,
+        "significant": "False"
+      },
+      "week_26": {
+        "point": -0.011852,
+        "ci90_lo": -0.007227,
+        "ci90_hi": 0.009407,
+        "significant": "False"
+      }
+    },
+    "Stablecoin Supply -> Stablecoin Supply": {
+      "week_4": {
+        "point": 2.426997,
+        "ci90_lo": 1.212171,
+        "ci90_hi": 1.558916,
+        "significant": "True"
+      },
+      "week_8": {
+        "point": 2.999608,
+        "ci90_lo": 1.46237,
+        "ci90_hi": 1.849825,
+        "significant": "True"
+      },
+      "week_12": {
+        "point": 3.480065,
+        "ci90_lo": 1.536529,
+        "ci90_hi": 1.988724,
+        "significant": "True"
+      },
+      "week_26": {
+        "point": 4.061827,
+        "ci90_lo": 1.587653,
+        "ci90_hi": 2.166328,
+        "significant": "True"
+      }
+    }
+  }
+}

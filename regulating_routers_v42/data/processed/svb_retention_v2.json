@@ -1,0 +1,80 @@
+{
+  "stress_window": "2023-03-09 to 2023-03-15",
+  "normal_window": "2023-02-09 to 2023-03-08",
+  "stress_days": 7,
+  "normal_days": 27,
+  "retention_by_entity": {
+    "Curve 3pool": {
+      "retention": 12.35,
+      "stress_daily_avg_B": 2.33,
+      "normal_daily_avg_B": 0.19,
+      "tier": 3
+    },
+    "BitGo": {
+      "retention": 6.8,
+      "stress_daily_avg_B": 0.09,
+      "normal_daily_avg_B": 0.01,
+      "tier": 1
+    },
+    "1inch": {
+      "retention": 5.57,
+      "stress_daily_avg_B": 0.72,
+      "normal_daily_avg_B": 0.13,
+      "tier": 3
+    },
+    "Uniswap V3": {
+      "retention": 5.07,
+      "stress_daily_avg_B": 0.04,
+      "normal_daily_avg_B": 0.01,
+      "tier": 3
+    },
+    "OKX": {
+      "retention": 3.44,
+      "stress_daily_avg_B": 0.43,
+      "normal_daily_avg_B": 0.12,
+      "tier": 2
+    },
+    "Bybit": {
+      "retention": 3.39,
+      "stress_daily_avg_B": 0.14,
+      "normal_daily_avg_B": 0.04,
+      "tier": 2
+    },
+    "Compound V3": {
+      "retention": 3.02,
+      "stress_daily_avg_B": 0.04,
+      "normal_daily_avg_B": 0.01,
+      "tier": 3
+    },
+    "Coinbase": {
+      "retention": 2.63,
+      "stress_daily_avg_B": 4.03,
+      "normal_daily_avg_B": 1.53,
+      "tier": 1
+    },
+    "Binance": {
+      "retention": 2.2,
+      "stress_daily_avg_B": 4.39,
+      "normal_daily_avg_B": 1.99,
+      "tier": 2
+    },
+    "Kraken": {
+      "retention": 2.14,
+      "stress_daily_avg_B": 0.82,
+      "normal_daily_avg_B": 0.38,
+      "tier": 2
+    },
+    "Tether": {
+      "retention": 1.77,
+      "stress_daily_avg_B": 0.45,
+      "normal_daily_avg_B": 0.25,
+      "tier": 2
+    },
+    "Circle": {
+      "retention": 1.39,
+      "stress_daily_avg_B": 3.42,
+      "normal_daily_avg_B": 2.47,
+      "tier": 1
+    }
+  }
+}
