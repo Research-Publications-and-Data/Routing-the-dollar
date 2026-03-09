@@ -20,6 +20,17 @@
 
 See `data/raw/NANSEN_NOTICE.md` for licensing details.
 
+## Reconciliation & verification
+
+| File | Purpose |
+|------|---------|
+| `scripts/reconcile_dashboard_metrics.py` | Regenerates upgraded CSVs from v2 data; verifies against paper targets |
+| `scripts/09_gateway_dashboard.py` | 5-panel gateway monitoring dashboard (Exhibit 28) |
+| `data/processed/verification_report.json` | SVB contagion chain: 10 verified claims with primary sources |
+| `data/processed/verification_report.md` | Human-readable version of verification report |
+
+Run `python scripts/reconcile_dashboard_metrics.py --dry-run` to verify upgraded CSV metrics match paper targets (T1=41%, HHI=5,021, SVB nadir=13%, z-score=-2.7).
+
 ## Regenerated outputs
 
 All exhibits are regenerable from `scripts/` + `data/processed/`. Run `python scripts/verify_claims.py` to confirm numerical consistency. Run `python scripts/audit_replication_package.py` for structural checks.
