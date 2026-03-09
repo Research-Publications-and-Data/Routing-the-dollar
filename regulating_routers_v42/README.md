@@ -12,18 +12,22 @@
 
 ```
 regulating_routers_v42/
+├── Routing_the_Dollar_v42_FINAL_v7.docx    # Main paper (final)
+├── Routing_the_Dollar_v42_FINAL_v7.pdf     # Main paper (PDF)
+├── Routing_the_Dollar_Supplement_v42.docx   # Online supplement (final)
+├── paper_v25.md                            # Markdown source (supplement builder input)
 ├── config/
-│   └── settings.py                      # API keys, gateway registry, chart style
-├── scripts/                             # Numbered Python pipeline (70+ scripts)
+│   └── settings.py                         # API keys, gateway registry, chart style
+├── scripts/                                # Numbered Python pipeline (70+ scripts)
 ├── queries/
-│   └── dune/                            # 29 Dune Analytics SQL queries
+│   └── dune/                               # 29 Dune Analytics SQL queries
 ├── data/
-│   ├── raw/                             # Source data (FRED, Dune, Artemis, CoinGecko, DefiLlama)
-│   ├── processed/                       # Computed intermediates backing paper claims
-│   └── exhibits/                        # Generated chart PNGs and PDFs
-├── media/                               # 74 exhibit PNGs embedded in paper/supplement
-├── MANIFEST.md                          # Data provenance
-├── CHANGELOG_v25_to_v42.md              # What changed from v25
+│   ├── raw/                                # Source data (FRED, Dune, Artemis, CoinGecko, DefiLlama)
+│   ├── processed/                          # Computed intermediates backing paper claims
+│   └── exhibits/                           # Generated chart PNGs and PDFs
+├── media/                                  # 74 exhibit PNGs embedded in paper/supplement
+├── MANIFEST.md                             # Data provenance
+├── CHANGELOG_v25_to_v42.md                 # What changed from v25
 ├── requirements.txt
 └── .gitignore
 ```
@@ -39,6 +43,29 @@ regulating_routers_v42/
 | Artemis | Application-level stablecoin categorization | API key required |
 | Nansen | Entity labels and counterparty flows | Commercial license; see `data/raw/NANSEN_NOTICE.md` |
 | NY Fed | ON RRP counterparty data | Public API |
+
+## Key Data Files
+
+| File | Description |
+|------|-------------|
+| `data/raw/dune_eth_daily_expanded_v2.csv` | Daily USDC+USDT gateway volumes, 51 addresses, 19 entities, Feb 2023–Jan 2026 |
+| `data/raw/dune_eth_expanded_gateway_v2.csv` | Monthly gateway volumes by entity and token |
+| `data/raw/fred_all_series.csv` | 10 FRED series: Fed assets, ON RRP, SOFR, DFF, DGS10, deposits |
+| `data/raw/stablecoin_supply_extended.csv` | Daily stablecoin market caps (2019–2026) |
+| `data/raw/dtwexbgs_weekly.csv` | FRED DTWEXBGS trade-weighted dollar index (weekly) |
+| `data/raw/vixcls_weekly.csv` | FRED VIXCLS closing VIX (weekly) |
+| `data/processed/unified_extended_dataset.csv` | Merged FRED + stablecoin supply (weekly) |
+| `data/processed/exhibit_C1_gateway_shares_daily_upgraded.csv` | Daily tier shares (source for Exhibit C1) |
+| `data/processed/exhibit_C2_concentration_daily_upgraded.csv` | Daily HHI by entity and tier |
+| `data/processed/gateway_volume_summary_v2.csv` | Aggregate gateway statistics (Table 2 source) |
+| `data/processed/clii_nofreeze_robustness.csv` | CLII scores with/without freeze dimension |
+| `data/processed/vecm_reconciliation.json` | VECM coefficients and Johansen test results |
+| `data/processed/fomc_events.csv` | FOMC event study: supply changes at t+1,3,5,10 |
+| `data/processed/placebo_swing_stats.csv` | SVB placebo test (50 windows) |
+| `data/processed/quadrivariate_robustness.csv` | Johansen trace stats for baseline, +DTWEXBGS, +VIX |
+| `data/processed/quadrivariate_alpha.csv` | VECM alpha coefficients for quadrivariate systems |
+| `data/processed/quadrivariate_unit_roots.csv` | ADF unit root tests on all 5 series |
+| `data/processed/yield_spread_robustness.csv` | Granger F-stats at lags 1–4, both directions |
 
 ## Quick Start
 
@@ -115,12 +142,23 @@ All 29 Dune Analytics SQL queries are stored in `queries/dune/`. Key queries:
 | `internal_transfers.sql` | Internal transfer detection (Binance 18.3%) |
 | `bilateral_flows.sql` | Bilateral flow double-counting check |
 
+## Nansen Data
+
+Raw Nansen entity labels are not redistributable. See `data/raw/NANSEN_NOTICE.md` for details. The collection script (`scripts/nansen_collector_v4.py`) documents the methodology.
+
 ## CLII Scores
 
-The Compliance-Linked Infrastructure Index (CLII) scores use Table 2a as the single source of truth. The 5-dimension architecture is: License (25%), Reserve Transparency (20%), Freeze/Blacklist Capability (20%), Compliance Infrastructure (20%), Geographic/Sanctions Restrictions (15%).
+The Compliance-Linked Infrastructure Index (CLII) scores use v42 docx Table 2a as the single source of truth. The 5-dimension architecture is: License (25%), Reserve Transparency (20%), Freeze/Blacklist Capability (20%), Compliance Infrastructure (20%), Geographic/Sanctions Restrictions (15%).
 
 Tier cutoffs: Tier 1 > 0.75 (strict), Tier 2 >= 0.30, Tier 3 < 0.30.
 
-## Changes from v25
+## Version History
 
-See `CHANGELOG_v25_to_v42.md` for a complete list. Key additions: expanded gateway registry (19 entities, 51 addresses), multi-chain analysis (Ethereum + Tron + Solana + Base), yield-spread mechanism confirmation, VECM weak exogeneity, bootstrap IRFs, placebo tests.
+| Version | Changes |
+|---------|---------|
+| v24 | Pre-review draft |
+| v25 | Hedged overclaims, fixed Johansen rank=3, added CLII no-freeze robustness, recalculated SVB weekend metrics with expanded registry |
+| v41 | Full paper revision: 19 entities (51 addresses), multi-chain data, expanded econometrics |
+| v42 | Supplement sync: fixed 3 stale CLII values, added Robinhood to Table B2, verified all 11 references resolve |
+
+See `CHANGELOG_v25_to_v42.md` for a complete list of changes from v25.
