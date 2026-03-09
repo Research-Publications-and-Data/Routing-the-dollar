@@ -88,6 +88,10 @@ python 14_cross_stablecoin_cointegration.py  # Cross-stablecoin tests
 python 15_weak_exogeneity.py        # Johansen weak exogeneity
 python phase2_phase3_compute.py     # CLII robustness (no-freeze, PCA)
 
+# Sprint 5: Quadrivariate + yield-spread robustness
+python 16_quadrivariate_robustness.py      # DTWEXBGS + VIX quadrivariate Johansen
+python 17_yield_spread_robustness.py       # Compound yield-spread Granger causality
+
 # Verification
 python verify_claims.py             # Verify paper statistics
 python audit_replication_package.py # Structural audit

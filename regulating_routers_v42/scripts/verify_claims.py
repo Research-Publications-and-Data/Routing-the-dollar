@@ -226,6 +226,57 @@ def main():
         skip("Wintermute share 1.4% → 19.9%", "needs Nansen data")
         skip("Cross-gateway counterparties 5.8% → 2.6%", "needs Nansen data")
 
+    # --- Quadrivariate robustness ---
+    print("\n[Quadrivariate Robustness]")
+    try:
+        qr = pd.read_csv(DATA_PROC / "quadrivariate_robustness.csv")
+        check("Quadrivariate robustness CSV exists", len(qr) >= 3,
+              f"{len(qr)} rows")
+        # Baseline should be cointegrated
+        base_row = qr[qr["system"] == "baseline"]
+        if len(base_row) > 0:
+            check("Baseline rank >= 1",
+                  int(base_row.iloc[0]["rank"]) >= 1,
+                  f"rank={base_row.iloc[0]['rank']}")
+        # VIX system should survive
+        vix_row = qr[qr["system"].str.contains("VIX", case=False, na=False)]
+        if len(vix_row) > 0:
+            check("+ VIXCLS survives (rank >= 1)",
+                  bool(vix_row.iloc[0].get("survives", False)),
+                  f"rank={vix_row.iloc[0]['rank']}, "
+                  f"trace={vix_row.iloc[0].get('trace_r0', '?')}")
+    except FileNotFoundError:
+        skip("Quadrivariate robustness", "quadrivariate_robustness.csv not found")
+
+    try:
+        qa = pd.read_csv(DATA_PROC / "quadrivariate_alpha.csv")
+        check("Quadrivariate alpha CSV exists", len(qa) > 0, f"{len(qa)} rows")
+    except FileNotFoundError:
+        skip("Quadrivariate alpha", "quadrivariate_alpha.csv not found")
+
+    try:
+        qu = pd.read_csv(DATA_PROC / "quadrivariate_unit_roots.csv")
+        check("Unit root tests CSV exists", len(qu) == 5, f"{len(qu)} series")
+    except FileNotFoundError:
+        skip("Unit root tests", "quadrivariate_unit_roots.csv not found")
+
+    # --- Yield-spread Granger ---
+    print("\n[Yield-Spread Granger Causality]")
+    try:
+        ys = pd.read_csv(DATA_PROC / "yield_spread_robustness.csv")
+        check("Yield-spread robustness CSV exists", len(ys) > 0, f"{len(ys)} rows")
+        fwd_lag1 = ys[(ys["lag"] == 1) & (ys["direction"] == "spread_to_growth")]
+        if len(fwd_lag1) > 0:
+            f_val = float(fwd_lag1.iloc[0]["F_stat"])
+            p_val = float(fwd_lag1.iloc[0]["p_value"])
+            check("Spread → growth significant at lag 1",
+                  p_val < 0.01,
+                  f"F={f_val:.2f}, p={p_val:.4f}")
+        else:
+            skip("Spread → growth lag 1", "no lag-1 forward row found")
+    except FileNotFoundError:
+        skip("Yield-spread Granger", "yield_spread_robustness.csv not found")
+
     # --- Summary ---
     print("\n" + "=" * 70)
     total = PASS + FAIL + SKIP
