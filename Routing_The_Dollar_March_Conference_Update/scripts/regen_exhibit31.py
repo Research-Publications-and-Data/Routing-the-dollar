@@ -15,7 +15,7 @@ BASE = Path('/home/user/Claude/handoff')
 PROC = BASE / 'data' / 'processed'
 EXHI = BASE / 'exhibits'
 MEDIA = BASE / 'media'
-MEDIA_V25 = Path('/home/user/Claude/regulating_routers_v25/media')
+MEDIA_V25 = Path(__file__).resolve().parent.parent / 'media'
 for d in [EXHI, MEDIA, MEDIA_V25]:
     d.mkdir(parents=True, exist_ok=True)
 

@@ -15,7 +15,7 @@ from pathlib import Path
 
 # ── Paths ────────────────────────────────────────────────────
 HANDOFF = Path('/home/user/Claude/handoff')
-V25 = Path('/home/user/Claude/regulating_routers_v25')
+V25 = Path(__file__).resolve().parent.parent
 CACHE = HANDOFF / 'data' / 'processed' / 'irf_bootstrap_cache.npz'
 
 OUTPUT_DIRS = [

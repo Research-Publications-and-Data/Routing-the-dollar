@@ -5,9 +5,9 @@ Replication package for "The Control Layer of Tokenized Dollar Assets: Gateway I
 ## Repository Structure
 
 ```
-regulating_routers_v25/
-├── Routing_the_Dollar_v41.docx          # Main paper (final)
-├── Routing_the_Dollar_Supplement_v42.docx  # Online supplement (final)
+Routing_The_Dollar_March_Conference_Update/
+├── Routing_the_Dollar_March_Conference_Update_v2.docx  # Main paper (current)
+├── Routing_the_Dollar_Supplement_v42.docx              # Online supplement (final)
 ├── paper_v25.md                         # Markdown source (supplement builder input)
 ├── config/
 │   └── settings.py                      # Chart style, Dune API key

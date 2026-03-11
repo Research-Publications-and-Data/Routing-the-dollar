@@ -105,6 +105,6 @@ JSON output: `data/processed/vecm_reconciliation.json`
 
 To reproduce:
 ```bash
-cd regulating_routers_v25
+cd Routing_The_Dollar_March_Conference_Update
 python scripts/vecm_clii_verification.py
 ```
