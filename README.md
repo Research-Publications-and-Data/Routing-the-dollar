@@ -8,17 +8,17 @@ Prepared for the [Fifth Conference on the International Roles of the U.S. Dollar
 
 ---
 
-## Paper
+## Paper (v42, March 2026)
 
-| Document | Format |
-|----------|--------|
-| [Conference paper](paper/Routing_the_Dollar_March_Conference_Update.pdf) | PDF |
-| [Conference paper](paper/Routing_the_Dollar_March_Conference_Update.docx) | DOCX |
-| [Online supplement](paper/Routing_the_Dollar_Supplement_March_Conference_Update.docx) | DOCX |
+- [Conference paper (PDF)](paper/Routing_the_Dollar_March_Conference_Update.pdf)
+- [Conference paper (DOCX)](paper/Routing_the_Dollar_March_Conference_Update.docx)
+- [Online supplement (DOCX)](paper/Routing_the_Dollar_Supplement_March_Conference_Update.docx)
 
 ## Replication Package
 
 Code, queries, data, and reproduction instructions are in [`Routing_The_Dollar_March_Conference_Update/`](Routing_The_Dollar_March_Conference_Update/).
+
+Data covers four chains (Ethereum, Tron, Solana, Base), 19 gateway entities (51 addresses), February 2023 through January 2026. Sources: FRED, Dune Analytics, DefiLlama, CoinGecko, Artemis, Nansen, NY Fed.
 
 ## Abstract
 
