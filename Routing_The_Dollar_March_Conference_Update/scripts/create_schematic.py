@@ -7,7 +7,7 @@ from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
 import numpy as np
 from pathlib import Path
 
-MEDIA = Path('/home/user/Claude/Routing_The_Dollar_March_Conference_Update/media')
+MEDIA = Path('/home/user/Claude/regulating_routers_v25/media')
 MEDIA.mkdir(parents=True, exist_ok=True)
 
 # Colors

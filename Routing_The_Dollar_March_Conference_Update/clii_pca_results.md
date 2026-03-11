@@ -115,6 +115,6 @@ JSON output: `data/processed/clii_pca_results.json`
 
 To reproduce:
 ```bash
-cd Routing_The_Dollar_March_Conference_Update
+cd regulating_routers_v25
 python scripts/vecm_clii_verification.py
 ```

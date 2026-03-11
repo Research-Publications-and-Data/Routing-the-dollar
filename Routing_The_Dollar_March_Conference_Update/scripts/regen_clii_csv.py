@@ -5,7 +5,7 @@ from pathlib import Path
 
 PROC = Path('/home/user/Claude/handoff/data/processed')
 PROC.mkdir(parents=True, exist_ok=True)
-PROC2 = Path('/home/user/Claude/Routing_The_Dollar_March_Conference_Update/data/processed')
+PROC2 = Path('/home/user/Claude/regulating_routers_v25/data/processed')
 
 w_base = np.array([0.25, 0.20, 0.20, 0.20, 0.15])
 w_nofreeze_raw = np.array([0.25, 0.20, 0.0, 0.20, 0.15])

@@ -1,0 +1,37 @@
+{
+  "baseline_lag": 8,
+  "baseline_half_life_weeks": 248.1,
+  "baseline_alpha": -0.002794,
+  "sensitivity": [
+    {
+      "lag": 4,
+      "half_life_weeks": 1545.9,
+      "alpha": -0.000448,
+      "trace_pass_95": false
+    },
+    {
+      "lag": 6,
+      "half_life_weeks": 775.6,
+      "alpha": -0.000894,
+      "trace_pass_95": false
+    },
+    {
+      "lag": 8,
+      "half_life_weeks": 248.1,
+      "alpha": -0.002794,
+      "trace_pass_95": true
+    },
+    {
+      "lag": 10,
+      "half_life_weeks": 330.9,
+      "alpha": -0.002095,
+      "trace_pass_95": true
+    },
+    {
+      "lag": 12,
+      "half_life_weeks": 187.7,
+      "alpha": -0.003693,
+      "trace_pass_95": true
+    }
+  ]
+}
