@@ -6,8 +6,9 @@ Replication package for "The Control Layer of Tokenized Dollar Assets: Gateway I
 
 ```
 Routing_The_Dollar_March_Conference_Update/
-├── Routing_the_Dollar_March_Conference_Update_v2.docx  # Main paper (current)
-├── Routing_the_Dollar_Supplement_v42.docx              # Online supplement (final)
+├── Routing_the_Dollar_March_Conference_Update.docx     # Main paper (v43, current)
+├── Routing_the_Dollar_March_Conference_Update.pdf      # Main paper PDF
+├── Routing_the_Dollar_Supplement_March_Conference_Update.docx  # Online supplement
 ├── paper_v25.md                         # Markdown source (supplement builder input)
 ├── config/
 │   └── settings.py                      # Chart style, Dune API key
@@ -153,3 +154,4 @@ Tier cutoffs: Tier 1 > 0.75 (strict), Tier 2 >= 0.30, Tier 3 < 0.30.
 | v25 | Hedged overclaims, fixed Johansen rank=3, added CLII no-freeze robustness, recalculated SVB weekend metrics with expanded registry |
 | v41 | Full paper revision: 19 entities (51 addresses), multi-chain data, expanded econometrics |
 | v42 | Supplement sync: fixed 3 stale CLII values, added Robinhood to Table B2, verified all 11 references resolve |
+| v43 | Appendix K CLARITY reference updated to Senate substitute; ON RRP bridging clause added; static TOC removed; repeating table headers on all tables; image alt text added |
