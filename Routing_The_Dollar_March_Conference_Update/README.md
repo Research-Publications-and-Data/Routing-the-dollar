@@ -4,7 +4,7 @@
 
 **Author:** Zach Zukowski, Tokeneconomics
 
-**Venue:** Prepared for the Fifth Conference on International Roles of the U.S. Dollar, Board of Governors of the Federal Reserve System and Federal Reserve Bank of New York, June 22-23, 2026
+**Venue:** Fifth Conference on the International Roles of the U.S. Dollar, Board of Governors of the Federal Reserve System and Federal Reserve Bank of New York, June 2026
 
 **Version:** v42 (conference release, March 2026)
 
@@ -12,9 +12,9 @@
 
 ```
 Routing_The_Dollar_March_Conference_Update/
-├── Routing_the_Dollar_v42_FINAL_v8.docx    # Main paper (final)
-├── Routing_the_Dollar_v42_FINAL_v8.pdf     # Main paper (PDF)
-├── Routing_the_Dollar_Supplement_v42.docx   # Online supplement (final)
+├── Routing_the_Dollar_March_Conference_Update.docx    # Conference paper (DOCX)
+├── Routing_the_Dollar_March_Conference_Update.pdf     # Conference paper (PDF)
+├── Routing_the_Dollar_Supplement_March_Conference_Update.docx   # Online supplement
 ├── paper_v25.md                            # Markdown source (supplement builder input)
 ├── config/
 │   └── settings.py                         # API keys, gateway registry, chart style
@@ -26,7 +26,7 @@ Routing_The_Dollar_March_Conference_Update/
 │   ├── processed/                          # Computed intermediates backing paper claims
 │   └── exhibits/                           # Generated chart PNGs and PDFs
 ├── media/                                  # 74 exhibit PNGs embedded in paper/supplement
-├── MANIFEST.md                             # Data provenance
+├── MANIFEST.md                             # Data provenance and licensing
 ├── CHANGELOG_v25_to_v42.md                 # What changed from v25
 ├── requirements.txt
 └── .gitignore
@@ -48,24 +48,16 @@ Routing_The_Dollar_March_Conference_Update/
 
 | File | Description |
 |------|-------------|
-| `data/raw/dune_eth_daily_expanded_v2.csv` | Daily USDC+USDT gateway volumes, 51 addresses, 19 entities, Feb 2023–Jan 2026 |
+| `data/raw/dune_eth_daily_expanded_v2.csv` | Daily USDC+USDT gateway volumes, 51 addresses, 19 entities, Feb 2023 -- Jan 2026 |
 | `data/raw/dune_eth_expanded_gateway_v2.csv` | Monthly gateway volumes by entity and token |
 | `data/raw/fred_all_series.csv` | 10 FRED series: Fed assets, ON RRP, SOFR, DFF, DGS10, deposits |
-| `data/raw/stablecoin_supply_extended.csv` | Daily stablecoin market caps (2019–2026) |
-| `data/raw/dtwexbgs_weekly.csv` | FRED DTWEXBGS trade-weighted dollar index (weekly) |
-| `data/raw/vixcls_weekly.csv` | FRED VIXCLS closing VIX (weekly) |
+| `data/raw/stablecoin_supply_extended.csv` | Daily stablecoin market caps (2019 -- 2026) |
 | `data/processed/unified_extended_dataset.csv` | Merged FRED + stablecoin supply (weekly) |
-| `data/processed/exhibit_C1_gateway_shares_daily_upgraded.csv` | Daily tier shares (source for Exhibit C1) |
-| `data/processed/exhibit_C2_concentration_daily_upgraded.csv` | Daily HHI by entity and tier |
 | `data/processed/gateway_volume_summary_v2.csv` | Aggregate gateway statistics (Table 2 source) |
-| `data/processed/clii_nofreeze_robustness.csv` | CLII scores with/without freeze dimension |
 | `data/processed/vecm_reconciliation.json` | VECM coefficients and Johansen test results |
-| `data/processed/fomc_events.csv` | FOMC event study: supply changes at t+1,3,5,10 |
+| `data/processed/fomc_events.csv` | FOMC event study: supply changes at t+1, 3, 5, 10 |
 | `data/processed/placebo_swing_stats.csv` | SVB placebo test (50 windows) |
 | `data/processed/quadrivariate_robustness.csv` | Johansen trace stats for baseline, +DTWEXBGS, +VIX |
-| `data/processed/quadrivariate_alpha.csv` | VECM alpha coefficients for quadrivariate systems |
-| `data/processed/quadrivariate_unit_roots.csv` | ADF unit root tests on all 5 series |
-| `data/processed/yield_spread_robustness.csv` | Granger F-stats at lags 1–4, both directions |
 
 ## Quick Start
 
@@ -148,17 +140,17 @@ Raw Nansen entity labels are not redistributable. See `data/raw/NANSEN_NOTICE.md
 
 ## CLII Scores
 
-The Compliance-Linked Infrastructure Index (CLII) scores use v42 docx Table 2a as the single source of truth. The 5-dimension architecture is: License (25%), Reserve Transparency (20%), Freeze/Blacklist Capability (20%), Compliance Infrastructure (20%), Geographic/Sanctions Restrictions (15%).
+The Compliance-Linked Infrastructure Index (CLII) scores use v42 DOCX Table 2a as the single source of truth. The 5-dimension architecture is: License (25%), Reserve Transparency (20%), Freeze/Blacklist Capability (20%), Compliance Infrastructure (20%), Geographic/Sanctions Restrictions (15%).
 
-Tier cutoffs: Tier 1 > 0.75 (strict), Tier 2 >= 0.30, Tier 3 < 0.30.
+Tier cutoffs: Tier 1 > 0.75, Tier 2 >= 0.30, Tier 3 < 0.30.
 
 ## Version History
 
-| Version | Changes |
-|---------|---------|
-| v24 | Pre-review draft |
-| v25 | Hedged overclaims, fixed Johansen rank=3, added CLII no-freeze robustness, recalculated SVB weekend metrics with expanded registry |
-| v41 | Full paper revision: 19 entities (51 addresses), multi-chain data, expanded econometrics |
-| v42 | Supplement sync: fixed 3 stale CLII values, added Robinhood to Table B2, verified all 11 references resolve |
+| Version | Date | Changes |
+|---------|------|---------|
+| v24 | Feb 2026 | Pre-review draft |
+| v25 | Feb 2026 | Hedged overclaims, fixed Johansen rank=3, added CLII no-freeze robustness, recalculated SVB weekend metrics with expanded registry |
+| v41 | Mar 2026 | Full paper revision: 19 entities (51 addresses), multi-chain data, expanded econometrics |
+| v42 | Mar 2026 | Supplement sync, exhibit renumbering, sign-error fixes, conference submission |
 
 See `CHANGELOG_v25_to_v42.md` for a complete list of changes from v25.
