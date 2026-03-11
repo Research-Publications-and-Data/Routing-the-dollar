@@ -1,0 +1,10 @@
+,event,token,gateway,clii,min,max,max_depeg
+0,svb,USDC,Circle Treasury,0.92,0.878874,1.003341,0.121126
+1,svb,USDT,Tether Treasury,0.45,0.992437,1.027781,0.027781
+2,svb,DAI,MakerDAO,0.2,0.886433,1.003466,0.113567
+3,busd,USDC,Circle Treasury,0.92,0.988766,1.014673,0.014673
+4,busd,USDT,Tether Treasury,0.45,0.992386,1.008423,0.008423
+5,busd,DAI,MakerDAO,0.2,0.995316,1.007428,0.007428
+6,tornado,USDC,Circle Treasury,0.92,0.994525,1.00789,0.00789
+7,tornado,USDT,Tether Treasury,0.45,0.996433,1.006699,0.006699
+8,tornado,DAI,MakerDAO,0.2,0.994891,1.007916,0.007916

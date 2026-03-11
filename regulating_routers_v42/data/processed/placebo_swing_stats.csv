@@ -1,9 +1,0 @@
-metric,value
-svb_swing_pp,51.8
-placebo_max_swing_pp,61.9
-placebo_mean_swing_pp,34.9
-placebo_median_swing_pp,33.9
-svb_exceeds_all_placebos,False
-svb_swing_percentile,94.0
-nadir_zscore,-2.7
-days_below_p5,2

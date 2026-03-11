@@ -1,0 +1,10 @@
+name,trust_score,trust_score_rank,trade_volume_24h_btc,trade_volume_24h_btc_normalized,country,year_established,exchange_id,entity,tier,market_share_pct
+Binance,10.0,1.0,168786.81431264544,0.0,Cayman Islands,2017.0,binance,Binance,2,0
+Kraken,10.0,7.0,21060.351261001902,0.0,United States,2011.0,kraken,Kraken,2,0
+Coinbase Exchange,10.0,2.0,34971.21037325474,0.0,United States,2012.0,gdax,Coinbase,1,0
+Bybit,10.0,3.0,33936.57716566387,0.0,British Virgin Islands,2018.0,bybit_spot,Bybit,2,0
+HTX,9.0,12.0,19068.644499603986,0.0,Seychelles,2013.0,huobi,HTX,2,0
+Gemini,9.0,18.0,1375.4286994771433,0.0,United States,2014.0,gemini,Gemini,1,0
+Crypto.com Exchange,9.0,11.0,34756.85573766999,0.0,Malta,2019.0,crypto_com,Crypto.com,2,0
+KuCoin,9.0,10.0,43363.494286667046,0.0,Seychelles,2017.0,kucoin,KuCoin,2,0
+,,,,,,,okx,OKX,2,0

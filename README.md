@@ -9,7 +9,7 @@ Prepared for the Fifth Conference on International Roles of the U.S. Dollar, Boa
 ## Contents
 
 - [`paper/`](paper/) -- Conference paper and online supplement
-- [`regulating_routers_v42/`](regulating_routers_v42/) -- Replication package
+- [`Routing_The_Dollar_March_Conference_Update/`](Routing_The_Dollar_March_Conference_Update/) -- Replication package
   (code, queries, data, and reproduction instructions)
 
 ## Abstract
@@ -26,4 +26,4 @@ Zukowski, Zach. 2026. "Routing the Dollar: Gateway Infrastructure, Monetary Poli
 
 Paper and text: All rights reserved.
 Code and queries: MIT License.
-Data: See [`regulating_routers_v42/MANIFEST.md`](regulating_routers_v42/MANIFEST.md) for source-specific terms.
+Data: See [`Routing_The_Dollar_March_Conference_Update/MANIFEST.md`](Routing_The_Dollar_March_Conference_Update/MANIFEST.md) for source-specific terms.

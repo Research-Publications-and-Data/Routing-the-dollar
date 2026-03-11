@@ -1,0 +1,27 @@
+{
+  "sb2": {
+    "labeled_volume_T": 1.38,
+    "unlabeled_volume_T": 1.84,
+    "unlabeled_volume_share_pct": 57.1,
+    "labeled_transfers_M": 10.3,
+    "unlabeled_transfers_M": 39.2,
+    "labeled_large_vol_share_pct": 84.3,
+    "unlabeled_large_vol_share_pct": 66.7,
+    "labeled_small_count_share_pct": 56.1,
+    "unlabeled_small_count_share_pct": 57.9,
+    "sample_window": "Jul 2024 - Jan 2025 (6 months)"
+  },
+  "sb1": {
+    "unlabeled_n": 500,
+    "labeled_n": 37,
+    "unlabeled_median_degree": 41,
+    "labeled_median_degree": 261,
+    "unlabeled_median_flow_symmetry": 1.0,
+    "labeled_median_flow_symmetry": 0.9879,
+    "unlabeled_high_symmetry_pct": 97.2,
+    "unlabeled_high_degree_pct": 39.6,
+    "unlabeled_gateway_like_pct": 39.0,
+    "labeled_high_symmetry_pct": 67.6
+  },
+  "interpretation": "The unlabeled addresses differ structurally from labeled gateways in two ways. First, unlabeled transfers are less concentrated in large transactions: 66.7% of unlabeled volume is in transfers >= $1M versus 84.3% for labeled (a 17.6 pp gap). Second, 57.9% of unlabeled <$1K transfers by count versus 56.1% for labeled, consistent with a heavier P2P footprint. Among the top 500 unlabeled addresses by volume, 39.0% exhibit gateway-like behavioral signatures (flow symmetry >= 0.9 and degree >= 100), indicating that some unlabeled volume is indeed exchange-like but the majority is structurally distinct."
+}

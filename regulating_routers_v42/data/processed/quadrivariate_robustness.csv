@@ -1,4 +1,0 @@
-system,n_obs,lag_aic,rank,cointegrated,survives,trace_r0,cv95_r0,trace_r1,cv95_r1,trace_r2,cv95_r2,trace_r3,cv95_r3
-baseline,157,8,1,True,True,30.68,29.8,6.97,15.49,0.22,3.84,,
-+ DTWEXBGS,157,5,0,False,False,45.47,47.85,16.49,29.8,6.85,15.49,0.3,3.84
-+ VIXCLS,157,5,1,True,True,49.49,47.85,24.53,29.8,6.87,15.49,0.31,3.84

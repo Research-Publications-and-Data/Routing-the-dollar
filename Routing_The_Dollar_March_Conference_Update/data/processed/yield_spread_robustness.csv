@@ -1,0 +1,9 @@
+lag,F_stat,p_value,significant_5pct,direction
+1,10.36,0.001574,True,spread_to_growth
+2,3.75,0.025647,True,spread_to_growth
+3,2.68,0.049338,True,spread_to_growth
+4,2.15,0.077516,False,spread_to_growth
+1,3.61,0.059186,False,reverse
+2,4.97,0.008119,True,reverse
+3,3.23,0.024318,True,reverse
+4,1.96,0.103581,False,reverse
