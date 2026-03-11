@@ -8,7 +8,7 @@ Prepared for the [Fifth Conference on the International Roles of the U.S. Dollar
 
 ---
 
-## Paper (v43, March 2026)
+## Paper (March 2026)
 
 - [Conference paper (PDF)](paper/Routing_the_Dollar_March_Conference_Update.pdf)
 - [Conference paper (DOCX)](paper/Routing_the_Dollar_March_Conference_Update.docx)

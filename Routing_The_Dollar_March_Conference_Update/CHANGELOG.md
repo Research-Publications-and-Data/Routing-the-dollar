@@ -1,4 +1,4 @@
-# CHANGELOG: v25 to v42
+# CHANGELOG: Gateway Registry and Paper Revisions
 
 ## Gateway Registry
 

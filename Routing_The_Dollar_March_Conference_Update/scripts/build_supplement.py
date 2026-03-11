@@ -1,5 +1,5 @@
 """
-Build the Online Supplement for Routing the Dollar v42.
+Build the Online Supplement for Routing the Dollar.
 
 Assembles content from paper_v25.md, data/processed/, and media/ into
 a formatted .docx file that resolves all 11 supplement references in
@@ -16,7 +16,7 @@ from docx.oxml.ns import qn
 ROOT = Path(__file__).resolve().parent.parent
 MEDIA = ROOT / "media"
 DATA_PROC = ROOT / "data" / "processed"
-OUTPUT = ROOT / "Routing_the_Dollar_Supplement_v42.docx"
+OUTPUT = ROOT / "Routing_the_Dollar_Supplement_March_Conference_Update.docx"
 
 # ── Styling helpers ──────────────────────────────────────────
 
@@ -752,7 +752,7 @@ def build_s16_eurodollar(doc):
 
 def main():
     print("=" * 60)
-    print("BUILDING ONLINE SUPPLEMENT v42")
+    print("BUILDING ONLINE SUPPLEMENT (March Conference Update)")
     print("=" * 60)
 
     doc = Document()

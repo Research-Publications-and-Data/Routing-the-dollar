@@ -6,7 +6,7 @@ Replication package for "The Control Layer of Tokenized Dollar Assets: Gateway I
 
 ```
 Routing_The_Dollar_March_Conference_Update/
-├── Routing_the_Dollar_March_Conference_Update.docx     # Main paper (v43, current)
+├── Routing_the_Dollar_March_Conference_Update.docx     # Main paper (current)
 ├── Routing_the_Dollar_March_Conference_Update.pdf      # Main paper PDF
 ├── Routing_the_Dollar_Supplement_March_Conference_Update.docx  # Online supplement
 ├── paper_v25.md                         # Markdown source (supplement builder input)
@@ -142,7 +142,7 @@ Raw Nansen entity labels are not redistributable. See `data/raw/NANSEN_NOTICE.md
 
 ## CLII Scores
 
-The Compliance-Linked Infrastructure Index (CLII) scores in this package use v42 docx Table 2a as the single source of truth. The 5-dimension architecture is: License (25%), Reserve Transparency (20%), Freeze/Blacklist Capability (20%), Compliance Infrastructure (20%), Geographic/Sanctions Restrictions (15%).
+The Compliance-Linked Infrastructure Index (CLII) scores in this package use the paper's Table 2a as the single source of truth. The 5-dimension architecture is: License (25%), Reserve Transparency (20%), Freeze/Blacklist Capability (20%), Compliance Infrastructure (20%), Geographic/Sanctions Restrictions (15%).
 
 Tier cutoffs: Tier 1 > 0.75 (strict), Tier 2 >= 0.30, Tier 3 < 0.30.
 

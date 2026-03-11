@@ -1,6 +1,6 @@
 # Paper
 
-Current version: **v43** (conference release, March 2026)
+Current version: conference release, March 2026
 
 | File | Description |
 |------|-------------|
