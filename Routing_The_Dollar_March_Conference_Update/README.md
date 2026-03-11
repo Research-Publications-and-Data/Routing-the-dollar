@@ -18,16 +18,18 @@ Routing_The_Dollar_March_Conference_Update/
 ├── paper_v25.md                            # Markdown source (supplement builder input)
 ├── config/
 │   └── settings.py                         # API keys, gateway registry, chart style
-├── scripts/                                # Numbered Python pipeline (70+ scripts)
+├── scripts/                                # Numbered Python pipeline (79 scripts)
 ├── queries/
 │   └── dune/                               # 29 Dune Analytics SQL queries
 ├── data/
 │   ├── raw/                                # Source data (FRED, Dune, Artemis, CoinGecko, DefiLlama)
 │   ├── processed/                          # Computed intermediates backing paper claims
 │   └── exhibits/                           # Generated chart PNGs and PDFs
-├── media/                                  # 74 exhibit PNGs embedded in paper/supplement
+├── media/                                  # 79 exhibit PNGs embedded in paper/supplement
 ├── MANIFEST.md                             # Data provenance and licensing
 ├── CHANGELOG_v25_to_v42.md                 # What changed from v25
+├── clii_pca_results.md                     # PCA validation of CLII dimensions
+├── vecm_reconciliation.md                  # VECM coefficient reconciliation notes
 ├── requirements.txt
 └── .gitignore
 ```
