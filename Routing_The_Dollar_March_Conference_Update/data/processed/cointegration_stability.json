@@ -1,0 +1,125 @@
+{
+  "metadata": {
+    "computed_at": "2026-09-14T09:08:27.205375+00:00",
+    "script_version": "a1_regenerate_cointegration_stability_v1",
+    "series": "WSHOSHO",
+    "data_sources": [
+      "data/raw/fred_wide.csv",
+      "data/processed/unified_extended_dataset.csv",
+      "data/raw/WSHOSHO_fred_source.csv"
+    ],
+    "producer_commits": [
+      "4a7d931 (add WSHOSHO)",
+      "622f036 (restore WALCL, negative comparison)"
+    ],
+    "null_design": "conditional randomisation (a1_conditional_null.conditional_p, imported verbatim): hold the two real Fed series fixed, draw only the dependent series as an independent I(1) process; size 0.05 by construction",
+    "seed": 20260914,
+    "note": "Supersedes the WITHDRAWN phase4b_v1 artifact (computed on WSHOMCB, mislabelled as total assets; withdrawn 2026-08-26). Regenerated on WSHOSHO (the DECIDED series, handoff/decisions/a1-mbs-runoff-reframe.md) per the 2026-09-13 amendment to dispatch step 5. No subsample or rolling-window rows: neither has a committed conditional-null producer for WSHOSHO in this repo (searched 2026-09-14); PAPER.md:280 and :342 point to Appendix F, whose own detail tables are in the online supplement, not this package. det_order=-1's rank is UNCONFIRMED by this producer; see det_order_sensitivity.det_minus1.rank_confidence."
+  },
+  "headline": {
+    "gauss": {
+      "trace": 46.217410664655475,
+      "cv95": 43.79209546415773,
+      "p": 0.0249,
+      "mc_se": 0.0011018164547691234,
+      "ci_lo": 0.022740439748652516,
+      "ci_hi": 0.02705956025134748,
+      "draws": 20000,
+      "T": 157
+    },
+    "block": {
+      "trace": 46.217410664655475,
+      "cv95": 43.72368876833263,
+      "p": 0.0261,
+      "mc_se": 0.0011273595256172718,
+      "ci_lo": 0.02389037532979015,
+      "ci_hi": 0.028309624670209855,
+      "draws": 20000,
+      "T": 157
+    }
+  },
+  "placebo": {
+    "BTC": {
+      "gauss": {
+        "trace": 28.11127875869518,
+        "cv95": 43.79209546415773,
+        "p": 0.81395,
+        "mc_se": 0.0027516849156471387,
+        "ci_lo": 0.8085566975653316,
+        "ci_hi": 0.8193433024346684,
+        "draws": 20000,
+        "T": 157
+      },
+      "block": {
+        "trace": 28.11127875869518,
+        "cv95": 43.72368876833263,
+        "p": 0.78025,
+        "mc_se": 0.002927968045419895,
+        "ci_lo": 0.774511182630977,
+        "ci_hi": 0.785988817369023,
+        "draws": 20000,
+        "T": 157
+      }
+    },
+    "ETH": {
+      "gauss": {
+        "trace": 31.504434550162575,
+        "cv95": 43.79209546415773,
+        "p": 0.5795,
+        "mc_se": 0.0034905569039911095,
+        "ci_lo": 0.5726585084681775,
+        "ci_hi": 0.5863414915318226,
+        "draws": 20000,
+        "T": 157
+      },
+      "block": {
+        "trace": 31.504434550162575,
+        "cv95": 43.72368876833263,
+        "p": 0.53655,
+        "mc_se": 0.0035260749956573527,
+        "ci_lo": 0.5296388930085115,
+        "ci_hi": 0.5434611069914884,
+        "draws": 20000,
+        "T": 157
+      }
+    }
+  },
+  "det_order_sensitivity": {
+    "det_minus1": {
+      "trace": 36.7498247632222,
+      "cv95": 42.09090185097356,
+      "p": 0.16445,
+      "mc_se": 0.002621127596092949,
+      "ci_lo": 0.15931258991165784,
+      "ci_hi": 0.1695874100883422,
+      "draws": 20000,
+      "T": 157,
+      "rank": 0,
+      "rank_confidence": "UNCONFIRMED: this run's own conditional null does not reject at det_order=-1 (p=0.1645); PAPER.md:280 states rank=1 here but no committed producer makes that specific computation reproducible from this package"
+    },
+    "det_0": {
+      "trace": 46.217410664655475,
+      "cv95": 43.79209546415773,
+      "p": 0.0249,
+      "mc_se": 0.0011018164547691234,
+      "ci_lo": 0.022740439748652516,
+      "ci_hi": 0.02705956025134748,
+      "draws": 20000,
+      "T": 157,
+      "rank": 1,
+      "rank_confidence": "matches PAPER.md:280"
+    },
+    "det_1": {
+      "trace": 25.770796390487295,
+      "cv95": 31.232249029752435,
+      "p": 0.16975,
+      "mc_se": 0.0026545709399072386,
+      "ci_lo": 0.16454704095778183,
+      "ci_hi": 0.1749529590422182,
+      "draws": 20000,
+      "T": 157,
+      "rank": 0,
+      "rank_confidence": "matches PAPER.md:280"
+    }
+  }
+}
