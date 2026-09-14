@@ -109,7 +109,7 @@ Data source: dune_eth_daily_expanded_v2.csv (51 addresses, 19 entities, daily gr
 
 **Confidence:** HIGH
 
-**Note:** Still above DOJ/FTC threshold of 2,500 — market remains 'highly concentrated'.
+**Note:** Still above DOJ/FTC threshold of 2,500, market remains 'highly concentrated'. [Corrected 2026-09-14: the current manuscript cites the threshold as 1,800 under the 2023 Merger Guidelines and now reads "nearly triple" rather than "roughly double", PAPER.md:511 as of origin/main 34671124d4; unaffected here, since 5,021 exceeds both values.]
 
 ---
 
@@ -121,7 +121,7 @@ Data source: dune_eth_daily_expanded_v2.csv (51 addresses, 19 entities, daily gr
 
 **Confidence:** HIGH
 
-**Note:** May be near or below 2,500 threshold with expanded entities. Key finding if so.
+**Note:** May be near or below 2,500 threshold with expanded entities. Key finding if so. [Corrected 2026-09-14: the current manuscript cites the threshold as 1,800 under the 2023 Merger Guidelines, PAPER.md:511 as of origin/main 34671124d4, which states the entity-level HHI (2,742 gross, 2,583 net) is above 1,800 "on average"; against the current threshold this "near or below" framing no longer applies. The current manuscript still reports a 62 percent gross / 48 percent net day-share figure, but measured against the OLDER 2,500 threshold specifically, not 1,800.]
 
 ---
 
