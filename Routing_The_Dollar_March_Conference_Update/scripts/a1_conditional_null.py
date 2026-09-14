@@ -52,8 +52,8 @@ warnings.filterwarnings("ignore")
 from statsmodels.tsa.vector_ar.vecm import coint_johansen, VECM
 from statsmodels.stats.diagnostic import acorr_ljungbox
 
-PKG = "/Users/zach/Routing-the-dollar/Routing_The_Dollar_March_Conference_Update"
 HERE = os.path.dirname(os.path.abspath(__file__))
+PKG = os.path.dirname(HERE)
 OUT = os.path.join(HERE, "a1_conditional_null.json")
 NS = 6000
 R = {}

@@ -48,8 +48,8 @@ METHOD. Imports conditional_p() from the committed a1_conditional_null.py verbat
 construction, same Monte Carlo machinery); only the balance-sheet series (WSHOSHO) and, for (e),
 the det_order argument change.
 
-DATA SOURCE. PKG/data/raw/fred_wide.csv and PKG/data/processed/unified_extended_dataset.csv at
-/Users/zach/Routing-the-dollar, where WSHOSHO was committed by add_wshosho_to_package.py
+DATA SOURCE. PKG/data/raw/fred_wide.csv and PKG/data/processed/unified_extended_dataset.csv in
+this package, where WSHOSHO was committed by add_wshosho_to_package.py
 (commit 4a7d931) and WALCL by add_walcl_to_package.py (commit 622f036). Both committed, not a
 dirty working tree, unlike the provenance caveat a1_aggregate_block_bootstrap.py carries.
 
